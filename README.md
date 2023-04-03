@@ -2,15 +2,23 @@
 
 
 
-## Getting Started
+## These are Done in this Flutter app
 
-This project is a starting point for a Flutter application.
+#1. Flutter Qr/barcode Scanner
+#2. Flutter QR code Generator
+#3. used icons_launcher package for icon app 
 
-A few resources to get you started if this is your first Flutter project:
+You can see all the process of the bellow pictures:
+![1](https://user-images.githubusercontent.com/101446076/229433744-9ac3e785-cd79-4e91-a1b3-c1d171f59ba6.jpeg)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![2](https://user-images.githubusercontent.com/101446076/229433781-0d013b92-ebf7-4d93-8740-dcf79b5f57b4.jpeg)
+
+
+![3](https://user-images.githubusercontent.com/101446076/229433798-846254db-61b9-4204-a776-32a3c91fa138.jpeg)
+
+
+![4](https://user-images.githubusercontent.com/101446076/229433826-318f7a3c-b733-44ef-b1af-a642edd1feb4.jpeg)
+
+
+![5](https://user-images.githubusercontent.com/101446076/229433870-16b364bb-1807-4df2-b633-3ef25786c17b.jpeg)
