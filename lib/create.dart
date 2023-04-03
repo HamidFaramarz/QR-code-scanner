@@ -1,16 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
-import 'dart:io';
-import 'dart:typed_data';
-import 'package:share/share.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:qr_flutter/qr_flutter.dart';
-import 'dart:ui' as ui;
-import 'package:path_provider/path_provider.dart';
-import 'extra.dart';
+import 'generateCode.dart';
 
 class CreateQRCode extends StatefulWidget {
   const CreateQRCode({super.key});
@@ -20,12 +9,12 @@ class CreateQRCode extends StatefulWidget {
 }
 
 class _CreateQRCodeState extends State<CreateQRCode> {
-  final TextEditingController TextQRCode12 = TextEditingController();
+  final TextEditingController textQRCode12 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(98, 98, 105, 245),
+      backgroundColor: Colors.deepPurple,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.only(left: 28, right: 28),
@@ -34,20 +23,20 @@ class _CreateQRCodeState extends State<CreateQRCode> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               TextFormField(
-                controller: TextQRCode12,
-                style: TextStyle(color: Colors.white, fontSize: 18),
+                controller: textQRCode12,
+                style: const TextStyle(color: Colors.black, fontSize: 18),
                 maxLines: 10,
                 maxLength: 200,
                 decoration: InputDecoration(
-                  fillColor: Color.fromARGB(255, 242, 103, 103),
+                  fillColor: Colors.amberAccent,
                   filled: true,
                   hintText: "Enter text to generate a QR code....",
-                  hintStyle: TextStyle(color: Colors.white, fontSize: 18),
+                  hintStyle: const TextStyle(color: Colors.grey, fontSize: 18),
                   enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: BorderSide(color: Colors.redAccent)),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.red),
+                      borderSide: const BorderSide(color: Colors.redAccent)),
+                  focusedBorder: const OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.deepPurple),
                   ),
                 ),
               ),
@@ -55,20 +44,21 @@ class _CreateQRCodeState extends State<CreateQRCode> {
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
                     builder: (BuildContext context) =>
-                        Extra(textQrCode12: TextQRCode12.text.trim()),
+                        Extra(textQrCode12: textQRCode12.text.trim()),
                   ));
                 },
                 child: Container(
                   height: 60,
                   width: 300,
-                  child: Center(
+                  // ignore: sort_child_properties_last
+                  child: const Center(
                     child: Text(
                       "Generate QR Code",
-                      style: TextStyle(fontSize: 20, color: Colors.white),
+                      style: TextStyle(fontSize: 20, color: Colors.black),
                     ),
                   ),
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 242, 103, 103),
+                      color: Colors.amberAccent,
                       borderRadius: BorderRadius.circular(10)),
                 ),
               ),

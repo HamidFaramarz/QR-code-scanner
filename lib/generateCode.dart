@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:share/share.dart';
@@ -39,7 +36,7 @@ class _ExtraState extends State<Extra> {
         title: const Text("Create Qr code scrren"),
         centerTitle: true,
         elevation: 0.0,
-        backgroundColor: Color.fromARGB(255, 5, 42, 110),
+        backgroundColor: Colors.deepPurple,
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 15, right: 15),
@@ -69,7 +66,7 @@ class _ExtraState extends State<Extra> {
               child: Container(
                 height: 50,
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.red, width: 4)),
+                    border: Border.all(color: Colors.deepPurple, width: 4)),
                 child: Center(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
