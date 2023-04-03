@@ -1,6 +1,6 @@
-# three
+# Qr Code Scanner and Generator
 
-A new Flutter project.
+
 
 ## Getting Started
 
